@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+              Question...
+            </div>
+            <div class="card-body">
+              <p class="card-text">{{currentQuestion.question}}</p>
+              <a href="#" class="btn btn-success" (click)="onQuestionAnswered(1)">Yes</a>
+              <a href="#" class="btn btn-danger ml-3" (click)="onQuestionAnswered(0)">No</a>
+
+              <div class="btn btn-danger ml-3" *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = true">
+                Preview
+                </div>
+            </div>
+          </div>
+      </div>
+
+
+  </div>
+  
